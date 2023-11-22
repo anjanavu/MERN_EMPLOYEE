@@ -1,0 +1,55 @@
+body{
+    /* background-image: url('https://img.freepik.com/free-photo/aerial-view-business-team_53876-124515.jpg?w=1060&t=st=1699195431~exp=1699196031~hmac=e15c3d8438fcfc58d51ce3f4c64e87b2683c2e74efaa6675ac67b88c38fdd92f'); */
+  background-color: white;
+}
+.employee-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.boxStyleMui {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.headingStyleMui {
+  margin-bottom: 20px;
+}
+
+.textFieldStyleMui {
+  width: 100%;
+}
+
+.buttonStyleMui {
+  color: white;
+}
+/* Style.css */
+
+.table-container {
+  margin-top: 20px;
+}
+
+
+
+.table-head {
+  background-color: #f5f5f5;
+}
+
+.table-head th {
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #dddddd;
+}
+
+.table-body td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #dddddd;
+}
+
+ 
