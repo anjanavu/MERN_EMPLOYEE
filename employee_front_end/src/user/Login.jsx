@@ -33,7 +33,7 @@ const Login = () => {
   
     function submitForm() {
       if (validateForm()) {
-      axios.post('http://localhost:3033/user/', user)
+      axios.post('/user/', user)
         .then((res) => {
           alert(res.data.message);
           if (res.data.message === 'success') {

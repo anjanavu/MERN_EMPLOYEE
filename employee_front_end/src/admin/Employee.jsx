@@ -51,7 +51,7 @@ const Employee = (props) => {
     };
   function submitForm() {
     if(props.method==="put"){
-      axiosInstance.put("http://localhost:3033/admin/edit/"+props.data._id,form)
+      axiosInstance.put("/admin/edit/"+props.data._id,form)
       .then((response)=>{
        
         if (response.data==="Updated successfully") {
@@ -66,7 +66,7 @@ const Employee = (props) => {
 
     else{
       if (validateForm()) {
-    axiosInstance.post('http://localhost:3033/admin/add', form)
+    axiosInstance.post('/admin/add', form)
       .then((res) => {
         alert(res.data);
         navigate('/view');

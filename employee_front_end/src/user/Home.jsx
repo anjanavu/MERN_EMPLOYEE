@@ -5,7 +5,7 @@ import axiosInstance from '../axiosintercepter';
 const Home = () => {
   const [cardData,setData]=useState([]);
   useEffect(() => {
-    axiosInstance.get('http://localhost:3033/admin')
+    axiosInstance.get('/admin')
       .then((res) => {
         setData(res.data); 
         console.log(res.data);

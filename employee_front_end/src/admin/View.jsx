@@ -12,7 +12,7 @@ const View = () => {
   var[singleValue,setSingleValue]=useState([])
 
   useEffect(() => {
-    axiosInstance.get('http://localhost:3033/admin')
+    axiosInstance.get('/admin')
       .then((res) => {
         setData(res.data); 
         console.log(res.data);
@@ -26,7 +26,7 @@ const View = () => {
   }
 
   function remove(id) {
-    axiosInstance.delete(`http://localhost:3033/admin/delete/${id}`)
+    axiosInstance.delete(`/admin/delete/${id}`)
       .then((res) => {
         alert(res.data);
         window.location.reload(false);
